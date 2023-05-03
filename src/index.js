@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App /> 
+    {/* app component를 불러왔다고 생각해야됨 */}
   </React.StrictMode>
 );
 
