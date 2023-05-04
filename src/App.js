@@ -58,9 +58,16 @@
 
 // export default App;
 
-//---------------------- 0505 -------------------------------------
-import Counter from "./Counter";
+//---------------------- 0505 p109 -------------------------------------
+// import Counter from "./Counter";
+// const App = () => {
+//   return <Counter />;
+// };
+// export default App;
+
+import Say from "./say";
+
 const App = () => {
-  return <Counter />;
+  return <Say />;
 };
 export default App;
