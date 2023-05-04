@@ -50,10 +50,17 @@
 // };
 // export default App;
 
-import MyComponent from "./MyComponent";
+// import MyComponent from "./MyComponent";
 
+// const App = () => {
+//   return <MyComponent name="가나다라">React</MyComponent>;
+// };
+
+// export default App;
+
+//---------------------- 0505 -------------------------------------
+import Counter from "./Counter";
 const App = () => {
-  return <MyComponent name="가나다라">React</MyComponent>;
+  return <Counter />;
 };
-
 export default App;
