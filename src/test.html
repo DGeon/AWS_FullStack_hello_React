@@ -9,7 +9,20 @@
   <script src='main.js'></script>
 </head>
 <body>
-  <button onclick="alert('excuted')">
+  <button>
   click me</button>
+  <input name="int" placeholder="입력">
+  <script>
+    document.querySelector("button").onclick = function(){
+      alert('excuted');
+    }
+    // document.getElementById("int").onchange = function (e){
+    //   console.log(e);
+    // }
+    doucument.querySelector("input[name='int']").onchange = (event)=>{
+      console.log(event);
+      console.log(this.value);
+    }
+  </script>
 </body>
 </html>

@@ -65,9 +65,18 @@
 // };
 // export default App;
 
-import Say from "./say";
+// import Say from "./say";
+
+// const App = () => {
+//   return <Say />;
+// };
+// export default App;
+
+//---------------------- 0508 p123 -------------------------------------
+import EventPractice from "./EventPractice";
 
 const App = () => {
-  return <Say />;
+  return <EventPractice />;
 };
+
 export default App;
