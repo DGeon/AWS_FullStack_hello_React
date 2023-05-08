@@ -73,10 +73,60 @@
 // export default App;
 
 //---------------------- 0508 p123 -------------------------------------
-import EventPractice from "./EventPractice";
+// import EventPractice from "./EventPractice";
 
-const App = () => {
-  return <EventPractice />;
-};
+// const App = () => {
+//   return <EventPractice />;
+// };
+
+// export default App;
+
+// import EventPracticeFn from "./EventPracticeFn";
+
+// const App = () => {
+//   return <EventPracticeFn />;
+// };
+
+// export default App;
+
+// import ValidationSample from "./ValidationSample.js";
+
+// const App = () => {
+//   return <ValidationSample />;
+// };
+
+// export default App;
+
+//p146
+// import ValidationSample from "./ValidationSample.js";
+// import React, { Component } from "react";
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <ValidationSample />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+import React, { Component } from "react";
+import Scrollbox from "./Scrollbox.js";
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Scrollbox ref={(ref) => (this.scrollbox = ref)} />
+        <button onClick={() => this.scrollbox.scrollToTop()}>맨 위로</button>
+        <button onClick={() => this.scrollbox.scrollToBottom()}>
+          맨 밑으로
+        </button>
+      </div>
+    );
+  }
+}
 
 export default App;
