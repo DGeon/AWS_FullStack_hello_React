@@ -73,13 +73,13 @@
 // export default App;
 
 //---------------------- 0508 p123 -------------------------------------
-import EventPractice from "./EventPractice.js";
+// import EventPractice from "./EventPractice.js";
 
-const App = () => {
-  return <EventPractice />;
-};
+// const App = () => {
+//   return <EventPractice />;
+// };
 
-export default App;
+// export default App;
 
 // import EventPracticeFn from "./EventPracticeFn";
 
@@ -145,3 +145,35 @@ export default App;
 // }
 
 // export default App;
+
+//---------------------- 0509 p179 -------------------------------------
+import React, { Component } from "react";
+import LifeCycleSample from "./LifeCycleSample";
+import ErrorBoundary from "./ErrorBoundary";
+
+function getRandomColor() {
+  return "#" + Math.floor(Math.random() * Math.pow(2, 24)).toString(16);
+}
+
+class App extends Component {
+  state = {
+    color: "#000000",
+  };
+  handleClick = () => {
+    this.setState({
+      color: getRandomColor(),
+    });
+  };
+  render() {
+    return (
+      <div>
+        <button onClick={this.handleClick}>랜덤색상</button>
+        <ErrorBoundary>
+          <LifeCycleSample color={this.state.color} />
+        </ErrorBoundary>
+      </div>
+    );
+  }
+}
+
+export default App;
