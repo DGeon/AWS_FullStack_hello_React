@@ -73,13 +73,13 @@
 // export default App;
 
 //---------------------- 0508 p123 -------------------------------------
-// import EventPractice from "./EventPractice";
+import EventPractice from "./EventPractice.js";
 
-// const App = () => {
-//   return <EventPractice />;
-// };
+const App = () => {
+  return <EventPractice />;
+};
 
-// export default App;
+export default App;
 
 // import EventPracticeFn from "./EventPracticeFn";
 
@@ -131,17 +131,17 @@
 
 // export default App;
 
-import React, { Component } from "react";
-import IterationSample from "./IterationSample.js";
+// import React, { Component } from "react";
+// import IterationSample from "./IterationSample.js";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <IterationSample />
-      </div>
-    );
-  }
-}
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <IterationSample />
+//       </div>
+//     );
+//   }
+// }
 
-export default App;
+// export default App;
